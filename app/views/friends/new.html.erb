@@ -1,9 +1,6 @@
-<h1>New friend</h1>
-
+<h2 class="p-3 display-6 mt-4">New friend</h2>
 <%= render "form", friend: @friend %>
-
 <br>
-
-<div>
-  <%= link_to "Back to friends", friends_path %>
+<div class="d-flex flex-row-reverse">
+  <%= link_to "Back to friends", friends_path, class:"btn btn-secondary" %>
 </div>

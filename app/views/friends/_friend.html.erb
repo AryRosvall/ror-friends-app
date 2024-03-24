@@ -1,27 +1,12 @@
-<div id="<%= dom_id friend %>">
-  <p>
-    <strong>First name:</strong>
-    <%= friend.first_name %>
-  </p>
-
-  <p>
-    <strong>Last name:</strong>
-    <%= friend.last_name %>
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <%= friend.email %>
-  </p>
-
-  <p>
-    <strong>Phone:</strong>
-    <%= friend.phone %>
-  </p>
-
-  <p>
-    <strong>Twitter:</strong>
-    <%= friend.twitter %>
-  </p>
-
+<div class="p-5 text-center shadow-sm bg-body-tertiary rounded">
+  <div class="container py-5" id="<%= dom_id friend %>">
+    <p>
+      <h1 class="display-4">
+        <%= friend.first_name + " " +  friend.last_name %>
+      </h1>
+    </p>
+    <p class="lead">
+      <%= friend.email %> | <%= friend.phone %> | <%= friend.twitter %>
+    </p>
+  </div>
 </div>
